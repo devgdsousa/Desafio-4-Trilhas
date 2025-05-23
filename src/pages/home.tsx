@@ -58,7 +58,7 @@ const Home: React.FC = () => {
                       </p>
                     </div>
                     <div className="about__card-image">
-                      <img src="public\assets\Group 28.svg" alt="Ilustração saúde pública" />
+                      <img src="assets\Group 28.svg" alt="Ilustração saúde pública" />
                     </div>
                  </div>
                 
