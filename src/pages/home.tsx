@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './home.css';
 import Navbar from '../components/NavBar/NavBar';
 import Carrocel from '../components/Carrosel/carrosel';
 import { FaCalendarAlt, FaUserAlt, FaChartPie, FaSyringe } from 'react-icons/fa';
