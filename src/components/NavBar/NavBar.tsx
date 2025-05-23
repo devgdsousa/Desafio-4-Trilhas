@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="navbar__logo"><img src='public\assets\logo.svg'/></div>
+      <div className="navbar__logo"><img src='assets\logo.svg'/></div>
 
       <div className={`navbar__links ${isOpen ? 'open' : ''}`}>
         <Button variant='outline'>Sobre Nós</Button>
