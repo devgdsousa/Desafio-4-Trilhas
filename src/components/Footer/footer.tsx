@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="footer__content">
             {/* Bloco 1: Governo do MA */}
             <div className="footer__block footer__block--logo">
-              <img src="src\assets\secti.svg" alt="Governo do Maranhão" />
+              <img src="public\assets\secti.svg" alt="Governo do Maranhão" />
             </div>
 
             {/* Separador */}
@@ -14,7 +14,7 @@ const Footer = () => {
 
             {/* Bloco 2: Trilhas | Inova */}
             <div className="footer__block footer__block--mid">
-              <img src="src\assets\trilhasInova.svg" alt="Trilhas" />
+              <img src="public\assets\trilhasInova.svg" alt="Trilhas" />
             </div>
 
             {/* Separador */}

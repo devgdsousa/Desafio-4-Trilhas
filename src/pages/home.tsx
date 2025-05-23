@@ -58,13 +58,13 @@ const Home: React.FC = () => {
                       </p>
                     </div>
                     <div className="about__card-image">
-                      <img src="src\assets\Group 28.svg" alt="Ilustração saúde pública" />
+                      <img src="public\assets\Group 28.svg" alt="Ilustração saúde pública" />
                     </div>
                  </div>
                 
                  <div className="about__ouvidoria">
                       <div className="ouvidoria__block ouvidoria__block--icon">
-                        <img src="src\assets\ouvidoria.svg" alt="Ouvidoria SUS 136" />
+                        <img src="public\assets\ouvidoria.svg" alt="Ouvidoria SUS 136" />
                       </div>
 
                       <div className="ouvidoria__divider" />
