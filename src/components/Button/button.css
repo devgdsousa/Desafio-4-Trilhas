@@ -1,0 +1,47 @@
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Variantes */
+.btn--primary {
+  background-color: #1E67ED;
+  width: 230px;
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: #1B4E9C;
+}
+
+.btn--secondary {
+  background-color: #48cae4;
+  color: white;
+}
+
+.btn--secondary:hover {
+  background-color: #0096c7;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn--outline:hover {
+  background-color: #281dc0;
+  color: white;
+}
+
+/* Estado desabilitado */
+.btn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}

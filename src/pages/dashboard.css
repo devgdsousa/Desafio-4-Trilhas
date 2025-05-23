@@ -1,0 +1,243 @@
+.painel {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem 1.5rem;
+  color: #1B4E9C;
+  box-sizing: border-box;
+}
+
+.painel__voltar {
+  margin-bottom: 1rem;
+}
+
+.voltar-botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #1B4E9C;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 30px;
+  transition: color 0.3s ease;
+}
+
+.voltar-botao:hover {
+  color: #024f9f;
+}
+
+.painel__titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.painel__atualizado {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.painel__atualizado span {
+  color: #1B4E9C;
+  font-weight: bold;
+}
+
+/* Filtros */
+.painel__filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.painel__filtros input {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 140px;
+  box-sizing: border-box;
+}
+
+.botao-buscar {
+  padding: 8px 16px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-buscar:hover {
+  background-color: #024f9f;
+}
+
+/* Cards */
+.painel__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.painel__card {
+  background-color: #eaf7fb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.painel__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1B4E9C;
+  margin-bottom: 0.5rem;
+}
+
+.painel__card h3 {
+  font-size: 1.6rem;
+  color: #0a0a0a;
+  margin: 0.3rem 0;
+}
+
+.painel__card p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Gráficos */
+.painel__graficos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.grafico-container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 400px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.grafico-container h3 {
+  font-size: 1.1rem;
+  color: #1B4E9C;
+  margin-bottom: 1rem;
+}
+
+.grafico-container canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+
+
+.painel__fontes {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fontes-card {
+  background-color: #e3efff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10%;
+}
+
+.fontes-card h3 {
+  color: #1B4E9C;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.fontes-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #1B4E9C;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.fontes-card li {
+  margin-bottom: 0.5rem;
+}
+
+.fontes-card a {
+  color: #1B4E9C;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fontes-card a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .painel__filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .painel__filtros input {
+    width: 100%;
+  }
+
+  .painel__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .painel__graficos {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico-container {
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .fontes-card {
+    padding: 1rem;
+  }
+
+  .fontes-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .fontes-card ul {
+    font-size: 0.9rem;
+  }
+}
