@@ -64,7 +64,7 @@ const Home: React.FC = () => {
                 
                  <div className="about__ouvidoria">
                       <div className="ouvidoria__block ouvidoria__block--icon">
-                        <img src="public\assets\ouvidoria.svg" alt="Ouvidoria SUS 136" />
+                        <img src="assets\ouvidoria.svg" alt="Ouvidoria SUS 136" />
                       </div>
 
                       <div className="ouvidoria__divider" />
